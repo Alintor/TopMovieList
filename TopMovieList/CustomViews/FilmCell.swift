@@ -13,5 +13,14 @@ class FilmCell: UITableViewCell {
         nameLbl.text = film.name
         ratingLbl.text = String(film.rating)
     }
-    
+}
+
+extension FilmCell {
+    static var reuseIdentifier: String {
+        return String(describing: FilmCell.self)
+        
+    }
+    static var nib: UINib {
+        return UINib(nibName: String(describing: FilmCell.self), bundle: nil)
+    }
 }
