@@ -1,35 +1,33 @@
-//
-//  FilmDetailVC.swift
-//  TopMovieList
-//
-//  Created by Alexandr Ovchinnikov on 24.11.17.
-//  Copyright © 2017 Alexandr Ovchinnikov. All rights reserved.
-//
+
 
 import UIKit
+import Kingfisher
 
 class FilmDetailVC: UIViewController {
+    
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var yearLbl: UILabel!
+    @IBOutlet weak var ratingLbl: UILabel!
+    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var filmImageView: UIImageView!
+    
+    var film:Film!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        configureView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func configureView() {
+        navigationItem.title = film.localizedName
+        nameLbl.text = film.name
+        yearLbl.text = String(film.year)
+        ratingLbl.text = String(film.rating)
+        descriptionLbl.text = film.desc
+        filmImageView.kf.indicatorType = .activity
+        filmImageView.kf.setImage(with: film.imageURL)
     }
-    */
 
 }

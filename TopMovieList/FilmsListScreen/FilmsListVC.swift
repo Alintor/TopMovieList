@@ -16,16 +16,15 @@ class FilmsListVC: UIViewController {
         tableView.register(FilmCell.nib, forCellReuseIdentifier: FilmCell.reuseIdentifier)
     }
 
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == String(describing: FilmDetailVC.self) {
+            if let filmDetailVC = segue.destination as? FilmDetailVC,
+                let film = sender as? Film {
+                filmDetailVC.film = film
+            }
+        }
     }
-    */
 
 }
 
@@ -54,5 +53,12 @@ extension FilmsListVC: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: FilmCell.reuseIdentifier, for: indexPath) as! FilmCell
         cell.configure(film: film)
         return cell
+    }
+}
+
+extension FilmsListVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let film = data[indexPath.section].films[indexPath.row]
+        performSegue(withIdentifier: String(describing: FilmDetailVC.self), sender: film)
     }
 }
