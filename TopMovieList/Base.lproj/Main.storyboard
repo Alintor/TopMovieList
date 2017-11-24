@@ -36,7 +36,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Jj-eP-PYE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gfc-mp-WPI"/>
+                    <navigationItem key="navigationItem" id="oa2-R3-Cm8">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="ltZ-ye-bE3">
+                            <rect key="frame" x="105" y="5.5" width="165" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="59j-DQ-HtV">
+                                    <rect key="frame" x="0.0" y="0.0" width="165" height="33"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="59j-DQ-HtV" firstAttribute="leading" secondItem="ltZ-ye-bE3" secondAttribute="leading" id="3Wt-FA-16m"/>
+                                <constraint firstAttribute="bottom" secondItem="59j-DQ-HtV" secondAttribute="bottom" id="A8Q-Jd-7hf"/>
+                                <constraint firstAttribute="trailing" secondItem="59j-DQ-HtV" secondAttribute="trailing" id="Fy3-RF-hty"/>
+                                <constraint firstItem="59j-DQ-HtV" firstAttribute="top" secondItem="ltZ-ye-bE3" secondAttribute="top" id="voT-yR-xPB"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="8ig-ja-yeh" id="b6S-V0-bAv"/>
                         <segue destination="Lng-1X-kVe" kind="show" identifier="FilmDetailVC" id="g18-o9-Yyr"/>
@@ -197,4 +215,7 @@
             <point key="canvasLocation" x="-129" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="118" height="32"/>
+    </resources>
 </document>
