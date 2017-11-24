@@ -61,4 +61,11 @@ extension FilmsListVC: UITableViewDelegate {
         let film = data[indexPath.section].films[indexPath.row]
         performSegue(withIdentifier: String(describing: FilmDetailVC.self), sender: film)
     }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = Constants.Colors.darkColor
+        if let headerView = view as? UITableViewHeaderFooterView {
+            headerView.textLabel?.textColor = Constants.Colors.whiteColor
+        }
+    }
 }

@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TopMovieList
-//
-//  Created by Alexandr Ovchinnikov on 23.11.17.
-//  Copyright © 2017 Alexandr Ovchinnikov. All rights reserved.
-//
 
 import UIKit
 
@@ -15,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        UINavigationBar.appearance().barStyle = .blackOpaque
         return true
     }
 

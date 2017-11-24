@@ -20,6 +20,7 @@
 		A87709461FC7D7580066A0E3 /* FilmsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87709451FC7D7580066A0E3 /* FilmsListVC.swift */; };
 		A87709481FC7D78F0066A0E3 /* FilmsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87709471FC7D78F0066A0E3 /* FilmsListPresenter.swift */; };
 		A877094A1FC7D7DA0066A0E3 /* FilmDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87709491FC7D7DA0066A0E3 /* FilmDetailVC.swift */; };
+		A877094F1FC7E8A20066A0E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877094E1FC7E8A20066A0E3 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A87709451FC7D7580066A0E3 /* FilmsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsListVC.swift; sourceTree = "<group>"; };
 		A87709471FC7D78F0066A0E3 /* FilmsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsListPresenter.swift; sourceTree = "<group>"; };
 		A87709491FC7D7DA0066A0E3 /* FilmDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailVC.swift; sourceTree = "<group>"; };
+		A877094E1FC7E8A20066A0E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C5FC70D35793E62F4A82C8D6 /* Pods_TopMovieList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopMovieList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 			children = (
 				A87709361FC6F8560066A0E3 /* films.json */,
 				A87709241FC6F4EC0066A0E3 /* AppDelegate.swift */,
+				A877094E1FC7E8A20066A0E3 /* Constants.swift */,
 				A87709441FC7D6E70066A0E3 /* CustomViews */,
 				A877094B1FC7D7EE0066A0E3 /* FilmsListScreen */,
 				A877094C1FC7D8100066A0E3 /* FilmDetailScreen */,
@@ -281,6 +284,7 @@
 				A87709251FC6F4EC0066A0E3 /* AppDelegate.swift in Sources */,
 				A87709421FC7D34B0066A0E3 /* FilmCell.swift in Sources */,
 				A877094A1FC7D7DA0066A0E3 /* FilmDetailVC.swift in Sources */,
+				A877094F1FC7E8A20066A0E3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
