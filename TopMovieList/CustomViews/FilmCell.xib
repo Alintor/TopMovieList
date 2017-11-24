@@ -24,19 +24,19 @@
                         <rect key="frame" x="16" y="11" width="348" height="88"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" text="9.012" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhe-GQ-x5m">
-                                <rect key="frame" x="290" y="8" width="42" height="21"/>
+                                <rect key="frame" x="290" y="16" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.67843137254901964" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UL-Fb-wBI">
-                                <rect key="frame" x="16" y="8" width="254" height="19.5"/>
+                                <rect key="frame" x="16" y="16" width="254" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.22352941176470587" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mek-tk-grj">
-                                <rect key="frame" x="16" y="43.5" width="316" height="18"/>
+                                <rect key="frame" x="16" y="54" width="316" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.51572949960495329" green="0.53012290544575658" blue="0.55849398452274313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -44,15 +44,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vhe-GQ-x5m" firstAttribute="top" secondItem="3CB-fi-qg9" secondAttribute="top" constant="8" id="3ra-hc-hLO"/>
+                            <constraint firstItem="vhe-GQ-x5m" firstAttribute="top" secondItem="3CB-fi-qg9" secondAttribute="top" constant="16" id="3ra-hc-hLO"/>
                             <constraint firstItem="Mek-tk-grj" firstAttribute="leading" secondItem="3CB-fi-qg9" secondAttribute="leading" constant="16" id="4E5-0G-nhq"/>
-                            <constraint firstItem="2UL-Fb-wBI" firstAttribute="top" secondItem="3CB-fi-qg9" secondAttribute="top" constant="8" id="EJD-3f-Bbe"/>
+                            <constraint firstItem="2UL-Fb-wBI" firstAttribute="top" secondItem="3CB-fi-qg9" secondAttribute="top" constant="16" id="EJD-3f-Bbe"/>
                             <constraint firstItem="vhe-GQ-x5m" firstAttribute="leading" secondItem="2UL-Fb-wBI" secondAttribute="trailing" constant="20" id="HqW-Hn-7Ub"/>
                             <constraint firstAttribute="trailing" secondItem="vhe-GQ-x5m" secondAttribute="trailing" constant="16" id="R92-vA-gUe"/>
                             <constraint firstAttribute="trailing" secondItem="Mek-tk-grj" secondAttribute="trailing" constant="16" id="WSX-w7-ihU"/>
                             <constraint firstItem="2UL-Fb-wBI" firstAttribute="leading" secondItem="3CB-fi-qg9" secondAttribute="leading" constant="16" id="b9j-zF-fRq"/>
-                            <constraint firstItem="Mek-tk-grj" firstAttribute="top" secondItem="2UL-Fb-wBI" secondAttribute="bottom" constant="16" id="hgN-hb-cKZ"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Mek-tk-grj" secondAttribute="bottom" constant="8" id="sI2-1U-SQu"/>
+                            <constraint firstItem="Mek-tk-grj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2UL-Fb-wBI" secondAttribute="bottom" constant="16" id="hgN-hb-cKZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Mek-tk-grj" secondAttribute="bottom" constant="16" id="sI2-1U-SQu"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">

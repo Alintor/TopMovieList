@@ -28,6 +28,7 @@ class FilmsListVC: UIViewController {
 
 }
 
+//MARK: - FilmsListView implementation
 extension FilmsListVC: FilmsListView {
     func setData(data: [FilmsListViewData]) {
         self.data = data
@@ -35,6 +36,7 @@ extension FilmsListVC: FilmsListView {
     }
 }
 
+//MARK: - UITableViewDataSource implementation
 extension FilmsListVC: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return data.count
@@ -56,6 +58,7 @@ extension FilmsListVC: UITableViewDataSource {
     }
 }
 
+//MARK: - UITableViewDelegate implementation
 extension FilmsListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let film = data[indexPath.section].films[indexPath.row]
